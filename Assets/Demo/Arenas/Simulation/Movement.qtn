@@ -1,0 +1,15 @@
+component Movement
+{
+	[Tooltip("Speed at which entity rotates")]
+	FP LookRotationSpeed;
+	[Tooltip("Force applied when jumping")]
+	FP JumpForce;
+}
+
+signal PlayerFell(EntityRef entity);
+
+event ResetLookRotation
+{
+	local PlayerRef LocalPlayer;
+	FPVector2 LookRotation;
+}

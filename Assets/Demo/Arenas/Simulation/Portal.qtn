@@ -1,0 +1,11 @@
+component Portal
+{
+	[Tooltip("Target arena name")]
+    QString<32> ArenaName;
+}
+
+event TeleportToArena
+{
+	local PlayerRef LocalPlayer;
+    QString<32> ArenaName;
+}
